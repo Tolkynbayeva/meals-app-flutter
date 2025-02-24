@@ -41,7 +41,7 @@ class FiltersScreen extends ConsumerWidget {
             value: activeFilters[Filter.lactoseFree]!,
             onChanged: (isChecked) {
               ref.read(filtersProvider.notifier).setFilter(
-                    Filter.glutenFree,
+                    Filter.lactoseFree,
                     isChecked,
                   );
             },
